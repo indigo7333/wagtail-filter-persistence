@@ -5,10 +5,6 @@
 
 A lightweight Wagtail plugin developed by [VERDATEK OÜ](https://verdatek.com) that preserves filter selections throughout the Wagtail admin interface when navigating between pages.
 
-<p align="center">
-  <img src="https://via.placeholder.com/600x300?text=Wagtail+Filter+Persistence" alt="Wagtail Filter Persistence Demo" width="600">
-</p>
-
 ## The Problem
 
 In standard Wagtail admin:
