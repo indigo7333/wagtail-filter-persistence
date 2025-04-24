@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="wagtail-filter-persistence",
-    version="0.1.1",
+    version="0.1.3",
     author="Emil P",
     author_email="emil@verdatek.com",
     description="A Wagtail plugin that persists filter selections in admin listings",
