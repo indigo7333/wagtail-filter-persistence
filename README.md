@@ -31,12 +31,12 @@ Wagtail Filter Persistence automatically saves and restores your filter selectio
 pip install wagtail-filter-persistence
 ```
 
-Then add to your installed apps in settings.py:
+Then add to your app in settings.py:
 
 ```
-INSTALLED_APPS = [
+MIDDLEWARE = [
     # ...
-    'wagtail_filter_persistence',
+    "wagtail_filter_persistence.middleware.WagtailFilterPersistenceMiddleware"
     # ...
 ]
 ```
@@ -47,6 +47,7 @@ That's it! No further configuration needed.
 The plugin uses a middleware that:
 
 Detects when you're viewing any Wagtail admin page with filters
+Detects when you're saving any Wagtail page or record
 Stores these filters in your session
 Detects when you return to a previously filtered page
 Automatically reapplies your stored filters
